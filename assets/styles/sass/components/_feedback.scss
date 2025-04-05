@@ -1,0 +1,50 @@
+@use "../libs/vars";
+
+#feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: vars.$white;
+  color: black;
+  padding: 54px 14px;
+}
+#feedback h2 {
+  color: vars.$secundary-darkblue;
+}
+
+.feedback-content h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+.feedback-content p {
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 20px;
+  max-width: 780px;
+}
+
+#feedback-content_grouped {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  padding: 0 44px 34px 44px;
+}
+
+.feedback-content_layout img {
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  #feedback-content_grouped {
+    flex-direction: column;
+  }
+  .feedback-content-layout img {
+    width: 380px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
