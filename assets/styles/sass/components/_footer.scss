@@ -1,0 +1,60 @@
+@use "../libs/vars";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: vars.$white;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+}
+.footer-icons ion-icon {
+  font-size: 23px;
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+#whatsapp-button img {
+  max-width: 64px;
+  transition: transform 0.4s;
+}
+
+#whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+#whatsapp-button #tooltip-txt {
+  visibility: hidden;
+  position: absolute;
+  max-width: 200px;
+  top: 15px;
+  left: -130px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: vars.$black;
+  color: vars.$white;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+#whatsapp-button:hover #tooltip-txt {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #whatsapp-button img {
+    max-width: 64px;
+  }
+}
