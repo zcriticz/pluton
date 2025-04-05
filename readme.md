@@ -20,7 +20,7 @@ Pluton is a modern and responsive landing page template built with HTML, SCSS, a
 
 1. You can clone the repository:
    ```bash
-   git clone https://github.com/your-username/pluton.git
+   git clone https://github.com/zcriticz/pluton.git
    ```
 2. Or test online version in [Vercel](https://plutondb.vercel.app)
 
