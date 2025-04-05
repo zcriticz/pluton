@@ -1,0 +1,29 @@
+@use "../libs/vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vars.$font-family;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: vars.$primary-darkblue;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
